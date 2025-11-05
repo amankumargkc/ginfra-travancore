@@ -1,21 +1,22 @@
 import Hero from '@/components/sections/Hero'
+import About from '@/components/sections/About'
+import CoreValues from '@/components/sections/CoreValues'
 import Services from '@/components/sections/Services'
+import WhyChooseUs from '@/components/sections/WhyChooseUs'
 import Statistics from '@/components/sections/Statistics'
 import Technologies from '@/components/sections/Technologies'
-import Features from '@/components/sections/Features'
 import Certifications from '@/components/sections/Certifications'
 import AboutCTA from '@/components/sections/AboutCTA'
 import CallToAction from '@/components/sections/CallToAction'
-import ContactCTA from '@/components/sections/ContactCTA'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "GInfra Travancore - Precision Manufacturing for Defence, Aerospace & Advanced Robotics",
-  description: "Leading precision manufacturing company in Telangana, India. We specialize in defence components, aerospace parts, and advanced robotics with ISO 9001 & AS9100 certifications. Located in Cherlapally and EMC Maheshwaram.",
+  title: "Precision Defense & Aerospace Manufacturing | GInfra Travancore Pvt. Ltd.",
+  description: "GInfra Travancore delivers high-precision defense components and electronic fuze systems with advanced CNC machining, forging, and full QA traceability — supporting artillery, aerospace, and robotics sectors across India.",
   keywords: "precision manufacturing, defence components, aerospace manufacturing, advanced robotics, CNC machining, artillery fuzes, electronics integration, ISO 9001, AS9100, Telangana, India",
   openGraph: {
-    title: "GInfra Travancore - Precision Manufacturing Excellence",
-    description: "Leading precision manufacturing company specializing in defence, aerospace, and advanced robotics components in Telangana, India.",
+    title: "Precision Defense & Aerospace Manufacturing | GInfra Travancore Pvt. Ltd.",
+    description: "GInfra Travancore delivers high-precision defense components and electronic fuze systems with advanced CNC machining, forging, and full QA traceability — supporting artillery, aerospace, and robotics sectors across India.",
     url: "https://ginfratravancore.com",
     type: "website",
   },
@@ -28,14 +29,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Hero />
+      <About />
       <Services />
-      <Statistics />
-      <Technologies />
-      <Features />
-      <Certifications />
-      <AboutCTA />
+      <WhyChooseUs />
+      <CoreValues />
+      {/* <Statistics /> */}
+      {/* <Technologies /> */}
+      {/* <Certifications /> */}
+      {/* <AboutCTA /> */}
       <CallToAction />
-      <ContactCTA />
     </main>
   )
 }

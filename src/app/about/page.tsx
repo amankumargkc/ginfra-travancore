@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Features from '@/components/sections/Features'
 
 export const metadata: Metadata = {
   title: "About GInfra Travancore - Leading Precision Manufacturing Company in Telangana",
@@ -198,6 +199,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <Features />
 
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700">

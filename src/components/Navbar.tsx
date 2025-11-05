@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,13 +22,20 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
-              GInfra Travancore
+            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <Image
+                src="/logo.png"
+                alt="GInfra Travancore"
+                width={320}
+                height={107}
+                className="h-20 w-auto"
+                priority
+              />
             </Link>
           </div>
 

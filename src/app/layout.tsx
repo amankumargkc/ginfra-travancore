@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: "Leading precision manufacturing company in Telangana, India. Specializing in defence, aerospace, and advanced robotics components with ISO 9001 and AS9100 certifications.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "GInfra Travancore - Precision Manufacturing",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GInfra Travancore - Precision Manufacturing for Defence & Aerospace",
     description: "Leading precision manufacturing company in Telangana, India. Specializing in defence, aerospace, and advanced robotics components.",
-    images: ["/og-image.jpg"],
+    images: ["/logo.png"],
   },
   alternates: {
     canonical: "https://ginfratravancore.com",
@@ -69,8 +69,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <meta name="theme-color" content="#1e40af" />
         <meta name="msapplication-TileColor" content="#1e40af" />
         <meta name="format-detection" content="telephone=no" />
