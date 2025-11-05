@@ -54,15 +54,6 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
-                    <span className="text-xl">📞</span>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Phone</div>
-                    <div className="text-gray-300">+91 XXX XXXX XXX</div>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
                     <span className="text-xl">📍</span>
                   </div>
                   <div>

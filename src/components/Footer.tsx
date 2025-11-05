@@ -88,12 +88,6 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <h5 className="font-medium text-white mb-1">Phone</h5>
-                <a href="tel:+91XXXXXXXXX" className="hover:text-blue-400 transition-colors text-sm">
-                  +91 XXX XXXX XXX
-                </a>
-              </div>
-              <div>
                 <h5 className="font-medium text-white mb-1">Locations</h5>
                 <div className="text-sm space-y-2">
                   <div>
@@ -111,19 +105,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              © 2025 GInfra Travancore Pvt. Ltd. All rights reserved.
-            </div>
-            <div className="flex space-x-6 text-sm text-gray-400">
-              <a
-                href="https://www.tryantler.com/home"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-400 transition-colors"
-              >
-                Powered by Antler Technologies
-              </a>
+          <div className="text-center">
+            <div className="text-sm text-gray-400">
+              © 2025 Ginfra Travancore Private Limited. All rights reserved.
             </div>
           </div>
         </div>
