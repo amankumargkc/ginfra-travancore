@@ -1,12 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const servicesDropdownRef = useRef<HTMLDivElement>(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -20,6 +21,23 @@ export default function Navbar() {
     setIsMenuOpen(false)
     setIsServicesOpen(false)
   }
+
+  // Close services dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) {
+        setIsServicesOpen(false)
+      }
+    }
+
+    if (isServicesOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isServicesOpen])
 
   return (
     <nav className="bg-white shadow-lg relative z-50">
@@ -57,7 +75,7 @@ export default function Navbar() {
               </Link>
               
               {/* Services Dropdown */}
-              <div className="relative">
+              <div className="relative" ref={servicesDropdownRef}>
                 <button
                   onClick={toggleServices}
                   className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors flex items-center"
